@@ -152,3 +152,6 @@ if (menuToggle && navLinks) {
     });
   });
 }
+
+// Disable Right-Click Context Menu
+document.addEventListener('contextmenu', (e) => e.preventDefault());

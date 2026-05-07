@@ -180,6 +180,9 @@
             currentStep = steps.length - 1; // Move to success step
             updateForm();
         });
+
+        // Disable Right-Click
+        document.addEventListener('contextmenu', (e) => e.preventDefault());
     </script>
 </body>
 </html>

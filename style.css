@@ -251,6 +251,7 @@ a {
 .hero p {
   font-size: 1.2rem;
   color: var(--text-muted);
+  margin-top: 110px;
   margin-bottom: 2rem;
 }
 

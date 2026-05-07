@@ -481,6 +481,13 @@ a {
   .section { padding: 4rem 0; }
   .section-title { font-size: 2rem; }
   
+  .hero { 
+    min-height: 100vh; 
+    height: 100vh;
+    padding: 0 1rem;
+    background: transparent !important;
+  }
+  
   .hero h1 { font-size: 2.2rem; }
   .hero p { font-size: 1rem; }
   .hero-buttons { flex-direction: column; gap: 0.8rem; }

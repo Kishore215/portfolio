@@ -176,7 +176,7 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 2rem;
+  padding: 80px 2rem 0;
   overflow: hidden;
   background: radial-gradient(circle at center, #142b29 0%, #091413 100%);
 }
@@ -217,7 +217,7 @@ a {
   position: relative;
   z-index: 2;
   max-width: 900px;
-  padding-top: 4rem;
+  padding-top: 6rem;
   animation: fadeIn 1.2s ease-out forwards;
 }
 

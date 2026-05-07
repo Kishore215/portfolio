@@ -59,6 +59,7 @@ const initThreeHero = () => {
     opacity: 0.2 
   });
   const shape = new THREE.Mesh(geometry, material);
+  shape.position.y = 1.2; // Move it up
   scene.add(shape);
 
   camera.position.z = 5;

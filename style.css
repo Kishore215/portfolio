@@ -178,6 +178,16 @@ a {
   text-align: center;
   padding: 0 2rem;
   overflow: hidden;
+  background: radial-gradient(circle at center, #142b29 0%, #091413 100%);
+}
+
+.hero-3d-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .hero-video {
@@ -206,15 +216,35 @@ a {
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 800px;
-  animation: fadeIn 1s ease forwards;
+  max-width: 900px;
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+.glass-card {
+  background: rgba(9, 20, 19, 0.4); /* Transparent enough to see 3D */
+  backdrop-filter: blur(8px); /* Reduced blur for better 3D visibility */
+  -webkit-backdrop-filter: blur(8px);
+  padding: 4rem;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 {
   font-family: var(--font-heading);
-  font-size: 4rem;
-  line-height: 1.2;
+  font-size: 4.5rem;
+  line-height: 1.1;
   margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #B0E4CC, #408A71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
 }
 
 .hero p {

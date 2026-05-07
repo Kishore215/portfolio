@@ -24,3 +24,20 @@ document.querySelectorAll('.section').forEach(section => {
   section.classList.add('fade-in-section');
   observer.observe(section);
 });
+
+// Mobile Menu Toggle
+const menuToggle = document.getElementById('mobile-menu');
+const navLinks = document.getElementById('nav-list');
+
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  // Close menu when clicking a link
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+    });
+  });
+}

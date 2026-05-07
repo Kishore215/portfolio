@@ -217,6 +217,7 @@ a {
   position: relative;
   z-index: 2;
   max-width: 900px;
+  padding-top: 4rem;
   animation: fadeIn 1.2s ease-out forwards;
 }
 

@@ -51,7 +51,7 @@ const initThreeHero = () => {
   scene.add(particles);
 
   // Center Shape
-  const geometry = new THREE.IcosahedronGeometry(window.innerWidth < 768 ? 1.2 : 2, 1);
+  const geometry = new THREE.IcosahedronGeometry(1.5, 1);
   const material = new THREE.MeshBasicMaterial({ 
     color: '#408A71', 
     wireframe: true, 

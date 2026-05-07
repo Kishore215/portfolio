@@ -217,7 +217,6 @@ a {
   position: relative;
   z-index: 2;
   max-width: 900px;
-  padding-top: 6rem;
   animation: fadeIn 1.2s ease-out forwards;
 }
 
@@ -252,7 +251,6 @@ a {
 .hero p {
   font-size: 1.2rem;
   color: var(--text-muted);
-  margin-top: 16rem; /* Adjust to clear the shape as in screenshot */
   margin-bottom: 2rem;
 }
 
@@ -510,7 +508,6 @@ a {
   .hero h1 { font-size: 2.2rem; }
   .hero p { 
     font-size: 1rem; 
-    margin-top: 10rem;
   }
   .hero-buttons { flex-direction: column; gap: 0.8rem; }
   .hero-buttons .btn { width: 100%; text-align: center; }

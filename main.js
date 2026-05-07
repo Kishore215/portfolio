@@ -41,17 +41,17 @@ const initThreeHero = () => {
 
   particlesGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
   const particlesMaterial = new THREE.PointsMaterial({
-    size: 0.015,
-    color: '#408A71',
+    size: window.innerWidth < 768 ? 0.04 : 0.025,
+    color: '#B0E4CC', 
     transparent: true,
-    opacity: 0.8
+    opacity: 0.7
   });
 
   const particles = new THREE.Points(particlesGeometry, particlesMaterial);
   scene.add(particles);
 
   // Center Shape
-  const geometry = new THREE.IcosahedronGeometry(2, 1);
+  const geometry = new THREE.IcosahedronGeometry(window.innerWidth < 768 ? 1.2 : 2, 1);
   const material = new THREE.MeshBasicMaterial({ 
     color: '#408A71', 
     wireframe: true, 
